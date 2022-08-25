@@ -20,7 +20,7 @@
 
 ## Live demo
 
-Still in development ... Check this section later.
+https://peter1907.github.io/leaderboard/
 
 ## Getting Started
 
