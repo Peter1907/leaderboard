@@ -26,7 +26,7 @@ body {
 
 .scores,
 .Add {
-  width: 400px;
+  width: 350px;
   position: relative;
 }
 
@@ -64,7 +64,7 @@ form button {
 
 .scores button {
   position: absolute;
-  right: 50px;
+  right: 0;
   top: 15px;
 }
 
