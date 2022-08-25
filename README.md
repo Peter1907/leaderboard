@@ -12,6 +12,11 @@
 - HTML
 - JavaScript
 - CSS
+- Webpack
+
+## Screenshots
+
+![](media/Screenshot001.jpg)
 
 ## Live demo
 
@@ -52,9 +57,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Background Photo by <a href="https://unsplash.com/@rihok?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Riho Kroll</a> on <a href="https://unsplash.com/s/photos/game?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 ## 📝 License
 
