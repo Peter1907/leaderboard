@@ -3,6 +3,15 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-image: url('../WallPaper.jpg');
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: bottom;
+}
+
+h2 {
+  color: #66fcf1;
 }
 
 .container {
@@ -14,6 +23,7 @@ body {
 .container h1 {
   margin-left: 10%;
   font-size: 42px;
+  color: #66fcf1;
 }
 
 .wrapper {
@@ -38,19 +48,36 @@ form {
 }
 
 form input {
-  border: 3px solid black;
+  border: 3px solid #1f2833;
   width: auto;
   font-weight: 500;
-  height: 40px;
+  height: 35px;
+  background-color: #c5c6c7;
+  color: #0b0c10;
+  padding-left: 10px;
+}
+
+form input:focus {
+  border: 3px solid #66fcf1;
 }
 
 button {
   padding: 7px 15px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: #0b0c10;
+  border: 1px solid #66fcf1;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 5px 5px 0 2px;
+  color: #66fcf1;
+}
+
+button:hover {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  border: 1px solid #0b0c10;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 form button {
@@ -65,12 +92,11 @@ form button {
 .scores button {
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 20px;
 }
 
 .board {
   list-style-type: none;
-  border: 3px solid black;
   margin: 1.5% 0;
   padding: 0;
   display: flex;
@@ -83,9 +109,11 @@ form button {
 }
 
 .board li:nth-child(odd) {
-  background-color: rgb(255, 255, 255);
+  background-color: #1f2833;
+  color: #c5c6c7;
 }
 
 .board li:nth-child(even) {
-  background-color: rgb(233, 233, 233);
+  background-color: #c5c6c7;
+  color: #1f2833;
 }
