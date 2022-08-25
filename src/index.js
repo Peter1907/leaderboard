@@ -5,10 +5,10 @@ async function getList() {
   const res = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rdFXKRDKu4NbpLCUv45S/scores');
   const data = await res.json();
   list = [];
-  data.result.forEach(element => {
-    list.push(element);    
+  data.result.forEach((element) => {
+    list.push(element);
   });
-};
+}
 
 const board = document.querySelector('.board');
 const refreshBtn = document.getElementById('refresh');
@@ -32,17 +32,15 @@ AddBtn.addEventListener('click', (e) => {
   const name = document.getElementById('name');
   const score = document.getElementById('score');
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/rdFXKRDKu4NbpLCUv45S/scores', {
-  method: 'POST',
-  body: JSON.stringify({
-    user: name.value,
-    score: score.value,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+    method: 'POST',
+    body: JSON.stringify({
+      user: name.value,
+      score: score.value,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
   name.value = '';
   score.value = '';
 });
