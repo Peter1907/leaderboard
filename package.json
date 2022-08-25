@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
@@ -14,7 +15,7 @@
     "webpack-dev-server": "^4.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -28,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/Peter1907/leaderboard/issues"
   },
-  "homepage": "https://github.com/Peter1907/leaderboard#readme"
+  "homepage": "https://github.com/Peter1907/leaderboard"
 }
